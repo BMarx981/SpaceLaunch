@@ -6,6 +6,7 @@ class SpaceXApiService {
     http.Response response =
         await http.get('https://api.spacexdata.com/v3/launches/');
     dynamic jsonObject = jsonDecode(response.body);
+    print(jsonObject.toString());
     
   }
 }
